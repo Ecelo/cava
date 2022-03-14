@@ -304,7 +304,8 @@ case "${host_os}" in
         build_linux=yes
         ;;
     *)
-        AC_MSG_ERROR(["OS $host_os is not supported"])
+        AC_MSG_NOTICE([Linux detected])
+        build_linux=yes
         ;;
 esac
 
